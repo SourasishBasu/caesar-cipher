@@ -7,8 +7,7 @@ user = "Y"
 def caesar(text,shift,direction): 
     x=[i for i in text]
     cipher_text=""
-    if shift > 26:
-        shift %= 26
+    shift %= 26
     for j in x:
         if j == " ":
             cipher_text+= j
